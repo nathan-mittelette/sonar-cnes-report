@@ -76,6 +76,11 @@ public abstract class AbstractDataProvider {
     protected static final String NAME = "name";
 
     /**
+     * Field to search in json to get a name
+     */
+    protected static final String NAME = "name";
+
+    /**
      * Logger for the class
      */
     protected static final Logger LOGGER = Logger.getLogger(AbstractDataProvider.class.getCanonicalName());

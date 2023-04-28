@@ -192,7 +192,7 @@ public abstract class AbstractQualityGateProvider extends AbstractDataProvider {
 
         // check if it was found
         if (!find) {
-            throw new UnknownQualityGateException(key);
+            throw new UnknownQualityGateException(name);
         }       
 
         return res;
