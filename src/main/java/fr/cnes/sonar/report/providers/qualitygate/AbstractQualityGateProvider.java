@@ -194,8 +194,8 @@ public abstract class AbstractQualityGateProvider extends AbstractDataProvider {
         final String key = jsonObject.getAsJsonObject(QUALITY_GATE).get(KEY).getAsString();
         final String name = jsonObject.getAsJsonObject(QUALITY_GATE).get(NAME).getAsString();
 
-        while (qualityGatesIterator.hasNext() && !find) {
-            tmp = qualityGatesIterator.next();
+        while (iterator.hasNext() && !find) {
+            tmp = iterator.next();
             if (tmp.getName().equals(name) || tmp.getId().equals(key)) {
                 res = tmp;
                 find = true;
